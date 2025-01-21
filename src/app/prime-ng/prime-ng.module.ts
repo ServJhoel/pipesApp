@@ -9,10 +9,14 @@ import { CardModule} from 'primeng/card'
 import { FieldsetModule} from 'primeng/fieldset'
 import {PanelModule} from 'primeng/panel'
 import { CommonModule } from '@angular/common';
-
+import { ToolbarModule } from 'primeng/toolbar';
+import { IconField } from 'primeng/iconfield';
+import { InputIcon } from 'primeng/inputicon';
+import { SplitButton } from 'primeng/splitbutton';
+import { TableModule } from 'primeng/table';
 @NgModule({
   declarations: [],
-  imports: [],
+  imports: [IconField,InputIcon,SplitButton],
   providers: [],
   exports: [
     // MenuModule,
@@ -24,7 +28,12 @@ import { CommonModule } from '@angular/common';
     CardModule,
     FieldsetModule,
     PanelModule,
-    CommonModule
+    CommonModule,
+    ToolbarModule,
+    InputIcon,
+    IconField,
+    SplitButton,
+    TableModule
   ],
 })
 export class PrimeNgModule {}
